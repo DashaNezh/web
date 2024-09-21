@@ -27,7 +27,7 @@
   /* Общие стили для всего приложения */
   
   body {
-    background: #031b34;
+    background: #040C18;
     padding: 0 2rem;
   }
   
@@ -140,6 +140,7 @@
     justify-content: space-between;
     align-items: center;
     background: #031b34;
+    z-index: 10;
   }
   
   .header .header-logo {
@@ -355,149 +356,117 @@
     width: 55%;
     color: #81afdd;
   }
-  
-  .img__girl__feature {
-    position: absolute;
-    width: 474.85px;
-    height: 542.69px;
-    top: 125px;
-    left: 50px;
-    opacity: 1;
-    transform: rotate(360deg);
-    z-index: 4;
-    filter: sepia(70%) saturate(150%) hue-rotate(180deg) brightness(40%) contrast(135%);
-  } 
-  
   .feature__right__now{
-    position: relative;
+    display: flex;
+    margin-top: 0px;
     width: 1044px;
     height: 607.53px;
-    margin: 0 auto;
-    opacity: 1;
-    overflow: hidden;
   }
 
-  .icon__girl {
+  .container__feature__image{
     position: relative;
+    width: 546px;
+    height: 607.53px;
+  }
+  .img__girl__feature{
+    position: absolute;
+    width: 474.85px;
+    height: 542.53px;
+    left: 80px;
+    top: 65px;
+    z-index: 4;
   }
 
   .img__rectangle{
     position: absolute;
-    top: 265px; /* Отступы для позиционирования */
-    left: -30px;
-    z-index: 2; /* Картинка будет позади */
-  }
-
-  .graphics-container {
-    position: relative;
-  }
-  
-  .ellipses-container {
-    position: relative;
-  }
-
-  .ellipse1, .ellipse2, .ellipse3, .ellipse4{
-    position: absolute;
-    z-index: 1;
-  }
-  .ellipse1{
-    top: 50px;
-    left: 40px;
-  }
-  .ellipse2{
-    top: 85px;
-    left: 77px;
-  }
-  .ellipse3{
-    top: 125px;
-    left: 122px;
-  }
-  .ellipse4{
-    top: 153px;
-    left: 150px;
-  }
-  .rectangle__25{
-    position: absolute;
-    top: 110px;
-    left: 30px;
-    z-index: 2;
-  }
-
-  .rectangle__192{
-    position: absolute;
-    top: 133px;
-    left: 52px;
+    width: 367.31px;
+    height: 402.05px;
+    top: 205px;
     z-index: 3;
   }
+
   .vector__409{
     position: absolute;
-    top: 142px;
-    left: 60px;
-    z-index: 4;
+    top: 94px;
+    left: 90px;
   }
+
   .vector__410{
     position: absolute;
-    top: 148px;
-    left: 60px;
-    z-index: 4;
+    top: 100px;
+    left: 90px;
   }
+
   .rectangle__24{
     position: absolute;
-    z-index: 3;
-    top: 189px;
-    left: 302px;
+    left: 332px;
+    top: 125px;
   }
 
   .text__my__apps{
     position: absolute;
-    z-index: 4;
-    top: 215px;
-    left: 375px;
-    width: 81px;
-    height: 30px;
-    size: 20px;
+    left: 400px;
+    top: 152px;
   }
 
-  .img__apps{
-    position: relative;
-    width: 34px;
-    height: 34px;
-    top: 206px;
-    left: 330px;
-    z-index: 4;
-  }
-  .rectangle__241{
+  .container__category{
     position: absolute;
-    top: 23px;
-    left: 15px;
+    width: 28px;
+    height: 10px;
+    top: 143px;
+    left: 360px;
+    z-index: 5;
   }
-  .rectangle__242{
+  .ellipse1, .ellipse2, .ellipse3, .ellipse4{
     position: absolute;
-    top: 23px;
-    left: 1px;
   }
-  .rectangle__243{
-    position: absolute;
-    top: 5px;
-    left: 15px;
-  }
-  .rectangle__244{
-    position: absolute;
-    top: 5px;
-    left: 1px;
+  .ellipse1{
+    top: 0px;
+    left: 70px;
   }
 
+  .ellipse2{
+    top: 33px;
+    left: 108px;
+  }
+
+  .ellipse3{
+    top: 76px;
+    left: 154px;
+  }
+  .ellipse4{
+    top: 106px;
+    left: 182px;
+  }
+
+  .rectangle__25{
+    position: absolute;
+    left: 60px;
+    top: 62px;
+  }
+  .container__message{
+    position: absolute;
+    z-index: 4;
+  }
+
+  .rectangle__192{
+    position: absolute;
+    top: 85px;
+    left: 82px;
+  }
   .container__content__right{
-    position: relative;
+    position: absolute;
     width: 479px;
     height: 334px;
-    top: 310px;
-    left: 572px;
+    top: 2760px;
+    left: 850px;
     opacity: 1;
   }
   .container__content__feature__1{
     position: absolute;
     top: 0px;
+    size: 16px;
+    line-height: 30px;
     color: #71E5FF;
   }
   .container__header__feature{
@@ -506,18 +475,408 @@
     height: 90px;
     top: 30px;
     size: 34px;
+    line-height: 45px;
   }
   .container__content__feature__main{
     position: absolute;
-    top: 145px;
+    top: 140px;
     size: 16px;
     color: #81AFDD;
+    line-height: 30px;
   }
   .container__content__feature__2{
     position: absolute;
-    top: 270px;
+    size: 16px;
+    line-height: 30px;
+    top: 300px;
     color: #FF8A71;
   }
+
+  .container__cta{
+    position: relative;
+    margin-top: 150px;
+    width: 1170px;
+    height: 172.65px;
+  }
+
+  .background__image__cta{
+    position: absolute;
+    width: 1170px;
+    height: 172.65px;
+    z-index: 1;
+  }
+
+  .text__cta__1{
+    position: absolute;
+    width: 318.87px;
+    height: 46.89px;
+    font-weight: 500;
+    size: 12px;
+    line-height: 30px;
+    color: #0E0E0E;
+    z-index: 2;
+    left: 64px;
+    top: 20px;
+  }
+
+  .text__cta__2{
+    position: absolute;
+    width: 550px;
+    height: 78px;
+    font-weight: 800;
+    size: 24px;
+    line-height: 35px;
+    color: #000000;
+    z-index: 2;
+    left: 64px;
+    top: 55px;
+  }
+  .cta__button {
+    width: 189.14px;
+    height: 59.4px;
+    border-radius: 40px;
+    position: absolute;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #000000;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+    top: 54px;
+    left: 900px;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+
+  .container__blog{
+    position: relative;
+    margin-top: 200px;
+    width: 1170px;
+    height: 961px;
+    z-index: 1;
+  }
+  .title__blog{
+    position: absolute;
+    width: 669px;
+    height: 150px;
+    font-weight: 800px;
+    size: 62px;
+    line-height: 75px;
+  }
+
+  .container__group__100{
+    position: relative;
+    width: 1170;
+    height: 695.21px;
+    margin-top: 250px;
+  }
+
+  .container__group__99{
+    position: relative;
+    width: 418.2px;
+    height: 695.21px;
+  }
+
+  .rectangle__group__97{
+    position: relative;
+    width: 327.34px;
+    height: 323.84px;
+    margin-left: 465px;
+    margin-top: -695.21px;
+  }
+  .rectangle__group__98{
+    position: relative;
+    width: 327.34px;
+    height: 323.84px;
+    margin-left: 465px;
+    margin-top: 46px;
+  }
+  
+  .rectangle__group__101{
+    position: relative;
+    width: 327.34px;
+    height: 323.84px;
+    margin-left: 835px;
+    margin-top: -695.21px;
+  }
+  .rectangle__group__102{
+    position: relative;
+    width: 327.34px;
+    height: 323.84px;
+    margin-left: 835px;
+    margin-top: 46px;
+  }
+
+  .container__group__99 .data__text{
+    position: relative;
+    font-size: 11.65px;
+    font-weight: 300;
+    line-height: 34.95px;
+    text-align: left;
+    z-index: 2;
+    top: -380px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .container__group__99 .title__small__cont{
+    position: relative;
+    width: 342.18px;
+    height: 90.74px;
+    font-size: 25.11px;
+    font-weight: 800;
+    line-height: 30.29px;
+    text-align: left;
+    z-index: 2;
+    top: -360px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+  
+  .container__group__99 .text__more__info{
+    position: relative;
+    width: 148px;
+    height: 34.95px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 34.95px;
+    text-align: left;    
+    z-index: 2;
+    top: -180px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__97 .data__text{
+    position: relative;
+    font-size: 11.65px;
+    font-weight: 300;
+    line-height: 34.95px;
+    text-align: left;
+    z-index: 2;
+    top: -180px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__97 .title__small__cont{
+    position: relative;
+    width: 284.23px;
+    height: 90.86px;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 30.29px;
+    text-align: left;
+    z-index: 2;
+    top: -180px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__97 .text__more__info{
+    position: relative;
+    width: 148px;
+    height: 34.95px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 34.95px;
+    text-align: left;    
+    z-index: 2;
+    top: -170px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__98 .data__text{
+    position: relative;
+    font-size: 11.65px;
+    font-weight: 300;
+    line-height: 34.95px;
+    text-align: left;
+    z-index: 2;
+    top: -180px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__98 .title__small__cont{
+    position: relative;
+    width: 284.23px;
+    height: 90.86px;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 30.29px;
+    text-align: left;
+    z-index: 2;
+    top: -180px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__98 .text__more__info{
+    position: relative;
+    width: 148px;
+    height: 34.95px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 34.95px;
+    text-align: left;    
+    z-index: 2;
+    top: -170px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__101 .data__text{
+    position: relative;
+    font-size: 11.65px;
+    font-weight: 300;
+    line-height: 34.95px;
+    text-align: left;
+    z-index: 2;
+    top: -180px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__101 .title__small__cont{
+    position: relative;
+    width: 284.23px;
+    height: 90.86px;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 30.29px;
+    text-align: left;
+    z-index: 2;
+    top: -180px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__101 .text__more__info{
+    position: relative;
+    width: 148px;
+    height: 34.95px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 34.95px;
+    text-align: left;    
+    z-index: 2;
+    top: -170px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__102 .data__text{
+    position: relative;
+    font-size: 11.65px;
+    font-weight: 300;
+    line-height: 34.95px;
+    text-align: left;
+    z-index: 2;
+    top: -180px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__102 .title__small__cont{
+    position: relative;
+    width: 284.23px;
+    height: 90.86px;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 30.29px;
+    text-align: left;
+    z-index: 2;
+    top: -180px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .rectangle__group__102 .text__more__info{
+    position: relative;
+    width: 148px;
+    height: 34.95px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 34.95px;
+    text-align: left;    
+    z-index: 2;
+    top: -170px;
+    left: 30px;
+    color: #FFFFFF;
+  }
+
+  .footer{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 968px;
+    z-index: 1;
+  }
+
+  .footer__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 196px;
+    margin-left: 310px;
+    width: 821px;
+    height: 150px;
+    size: 62px;
+    text-align: center;
+  }
+
+  .button__demo{
+    width: 337.58px;
+    height: 65px;
+    border-radius: 0px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #031B34;
+    border: 2px solid #fff; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+
+  .footer__logo{
+    display: flex;
+    margin-top: 13%;
+    margin-left: 8%;
+    width: 186px;
+    height: 117px;
+  }
+
+  .logo__gpt3{
+    width: 118px;
+    height: 30px;
+  }
+
+  .logo__text__1{
+    position: relative;
+    size: 12px;
+    color: #fff;
+    width: 186px;
+    height: 64px;
+    line-height: 16.39px;
+    margin-top: 30%;
+    margin-right: 6%;
+  }
+
   /* Медиа запросы для адаптива */
   
   @media screen and (max-width: 1024px) {
