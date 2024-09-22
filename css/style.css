@@ -464,6 +464,7 @@
   }
   .container__content__feature__1{
     position: absolute;
+    text-decoration: none;
     top: 0px;
     size: 16px;
     line-height: 30px;
@@ -486,10 +487,21 @@
   }
   .container__content__feature__2{
     position: absolute;
+    text-decoration: none;
     size: 16px;
     line-height: 30px;
     top: 300px;
     color: #FF8A71;
+  }
+
+  .container__content__feature__1:hover {
+    text-decoration: underline;
+    color: #71E5FF; /* Цвет при наведении */
+  }
+
+  .container__content__feature__2:hover {
+    text-decoration: underline;
+    color: #FF8A71; /* Цвет при наведении */
   }
 
   .container__cta{
@@ -814,12 +826,17 @@
     color: #FFFFFF;
   }
 
+  .text__more__info:hover {
+    text-decoration: underline;
+    color: #ff4a4a; /* Цвет при наведении */
+  }
+
   .footer{
     position: relative;
     margin-top: 100px;
     width: 100%;
     height: 968px;
-    z-index: 1;
+    justify-content: space-between;
   }
 
   .footer__title{
@@ -855,26 +872,90 @@
 
   .footer__logo{
     display: flex;
-    margin-top: 13%;
+    margin-top: 10%;
     margin-left: 8%;
-    width: 186px;
+    width: 220px;
     height: 117px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .logo__gpt3{
     width: 118px;
     height: 30px;
+    margin-right: 20px;
   }
 
   .logo__text__1{
-    position: relative;
-    size: 12px;
     color: #fff;
-    width: 186px;
-    height: 64px;
-    line-height: 16.39px;
-    margin-top: 30%;
-    margin-right: 6%;
+    line-height: 1.5;
+    margin-top: 15%;
+    max-width: 100%; 
+    font-size: 0.75rem;
+  }
+
+  .logo__text__1:last-of-type {
+    margin-top: 20px; 
+  }
+
+  .footer__links, .footer__company, .footer__get__in__touch {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+    width: 100px;
+    height: 192px;
+  }
+
+  .footer__links {
+    margin-left: 45%;
+    margin-top: -8%;
+  }
+
+  .footer__company{
+    margin-top: -14.5%;
+    margin-left: 60%;
+    width: 200px;
+  }
+
+  .footer__get__in__touch{
+    width: 200px;
+    margin-left: 80%;
+    margin-top: -14.5%;
+  }
+  
+  .links__title {
+    margin-bottom: 30px;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+  
+  .item__links__footer {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.75rem;
+  }
+  
+  .item__links__footer:hover {
+    text-decoration: underline;
+    color: #ff4a4a; /* Цвет при наведении */
+  }
+  
+  .item__links__footer__get__in__touch {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.75rem;
+  }
+
+  .rights{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    size: 12px;
   }
 
   /* Медиа запросы для адаптива */
