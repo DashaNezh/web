@@ -129,7 +129,42 @@
   }
   
   /* Стили для Шапки */
-  
+  .blur-container {
+    position: absolute;
+    top: -100px; 
+    left: -180px; 
+    width: 60%;
+    height: 140%; 
+    border-radius: 100%; 
+    background-size: cover;
+    pointer-events: none;
+    filter: blur(10px); 
+  }
+
+  .blur-container-2{
+    position: absolute; 
+    top: 700px; 
+    left: 1000px; 
+    width: 100%; 
+    height: 80%; 
+    border-radius: 50%; 
+    background-size: cover; 
+    pointer-events: none; 
+    filter: blur(150px); 
+  }
+
+  .blur-container-3{
+    position: absolute; 
+    top: 1900px; 
+    left: -700px;
+    width: 100%; 
+    height: 80%; 
+    border-radius: 50%; 
+    background-size: cover;
+    pointer-events: none;
+    filter: blur(150px); 
+  }
+
   .header {
     display: flex;
     max-width: 1169px;
@@ -220,6 +255,43 @@
   .hero_section .hero_section__right img {
     width: 100%;
   }
+
+  .left__social_approve {
+    display: flex;
+    align-items: center; 
+    position: relative; 
+  }
+
+  .ellipse31,
+  .ellipse32,
+  .ellipse33,
+  .ellipse34,
+  .ellipse35,
+  .ellipse36,
+  .ellipse37 {
+      margin-right: -10px; 
+  }
+
+  .ellipse37 {
+      position: relative; 
+  }
+
+  .ellipse37__text {
+      position: absolute; 
+      top: 50%;
+      left: 28.5%;
+      transform: translate(-50%, -50%);
+      font-size: 8px; 
+      color: #000; 
+      z-index: 1; 
+  }
+
+  .text__social__approve {
+      margin-left: 15px;
+      font-size: 12px; 
+      color: #fff; 
+  }
+
   
   /* Секция брендов */
   
@@ -358,6 +430,7 @@
   }
   .feature__right__now{
     display: flex;
+    justify-content: space-between;
     margin-top: 0px;
     width: 1044px;
     height: 607.53px;
@@ -405,6 +478,7 @@
 
   .text__my__apps{
     position: absolute;
+    width: 100%;
     left: 400px;
     top: 152px;
   }
@@ -455,42 +529,42 @@
     left: 82px;
   }
   .container__content__right{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     width: 479px;
     height: 334px;
-    top: 2760px;
-    left: 850px;
-    opacity: 1;
+    margin-top: 25%;
+    margin-left: 30%;
   }
   .container__content__feature__1{
-    position: absolute;
+    position: static;
     text-decoration: none;
-    top: 0px;
     size: 16px;
     line-height: 30px;
     color: #71E5FF;
+    margin-bottom: 2%;
   }
   .container__header__feature{
-    position: absolute; 
+    position: static; 
     width: 426px;
     height: 90px;
-    top: 30px;
+    margin-bottom: 5%;
     size: 34px;
     line-height: 45px;
   }
   .container__content__feature__main{
-    position: absolute;
-    top: 140px;
+    position: static;
+    margin-bottom: 3%;
     size: 16px;
     color: #81AFDD;
     line-height: 30px;
   }
   .container__content__feature__2{
-    position: absolute;
+    position: static;
     text-decoration: none;
     size: 16px;
     line-height: 30px;
-    top: 300px;
     color: #FF8A71;
   }
 
@@ -507,7 +581,7 @@
   .container__cta{
     position: relative;
     margin-top: 150px;
-    width: 1170px;
+    width: 1180px;
     height: 172.65px;
   }
 
@@ -531,6 +605,10 @@
     top: 20px;
   }
 
+  .text__cta__1:hover {
+    text-decoration: underline;
+    color: #ff4a4a; /* Цвет при наведении */
+  }
   .text__cta__2{
     position: absolute;
     width: 550px;
