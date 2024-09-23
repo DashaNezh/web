@@ -28,7 +28,8 @@
   
   body {
     background: #040C18;
-    padding: 0 2rem;
+    padding: 0 0rem;
+    
   }
   
   .page {
@@ -129,42 +130,7 @@
   }
   
   /* Стили для Шапки */
-  .blur-container {
-    position: absolute;
-    top: -100px; 
-    left: -180px; 
-    width: 60%;
-    height: 140%; 
-    border-radius: 100%; 
-    background-size: cover;
-    pointer-events: none;
-    filter: blur(10px); 
-  }
-
-  .blur-container-2{
-    position: absolute; 
-    top: 700px; 
-    left: 1000px; 
-    width: 100%; 
-    height: 80%; 
-    border-radius: 50%; 
-    background-size: cover; 
-    pointer-events: none; 
-    filter: blur(150px); 
-  }
-
-  .blur-container-3{
-    position: absolute; 
-    top: 1900px; 
-    left: -700px;
-    width: 100%; 
-    height: 80%; 
-    border-radius: 50%; 
-    background-size: cover;
-    pointer-events: none;
-    filter: blur(150px); 
-  }
-
+  
   .header {
     display: flex;
     max-width: 1169px;
@@ -450,84 +416,6 @@
     z-index: 4;
   }
 
-  .img__rectangle{
-    position: absolute;
-    width: 367.31px;
-    height: 402.05px;
-    top: 205px;
-    z-index: 3;
-  }
-
-  .vector__409{
-    position: absolute;
-    top: 94px;
-    left: 90px;
-  }
-
-  .vector__410{
-    position: absolute;
-    top: 100px;
-    left: 90px;
-  }
-
-  .rectangle__24{
-    position: absolute;
-    left: 332px;
-    top: 125px;
-  }
-
-  .text__my__apps{
-    position: absolute;
-    width: 100%;
-    left: 400px;
-    top: 152px;
-  }
-
-  .container__category{
-    position: absolute;
-    width: 28px;
-    height: 10px;
-    top: 143px;
-    left: 360px;
-    z-index: 5;
-  }
-  .ellipse1, .ellipse2, .ellipse3, .ellipse4{
-    position: absolute;
-  }
-  .ellipse1{
-    top: 0px;
-    left: 70px;
-  }
-
-  .ellipse2{
-    top: 33px;
-    left: 108px;
-  }
-
-  .ellipse3{
-    top: 76px;
-    left: 154px;
-  }
-  .ellipse4{
-    top: 106px;
-    left: 182px;
-  }
-
-  .rectangle__25{
-    position: absolute;
-    left: 60px;
-    top: 62px;
-  }
-  .container__message{
-    position: absolute;
-    z-index: 4;
-  }
-
-  .rectangle__192{
-    position: absolute;
-    top: 85px;
-    left: 82px;
-  }
   .container__content__right{
     display: flex;
     flex-direction: column;
@@ -906,69 +794,38 @@
 
   .text__more__info:hover {
     text-decoration: underline;
-    color: #ff4a4a; /* Цвет при наведении */
+    color: #ff4a4a;
   }
 
-  .footer{
-    position: relative;
-    margin-top: 100px;
-    width: 100%;
-    height: 968px;
-    justify-content: space-between;
-  }
-
-  .footer__title{
+  .footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 196px;
-    margin-left: 310px;
-    width: 821px;
-    height: 150px;
-    size: 62px;
-    text-align: center;
+    width: 90rem;
+    height: 968x;
+    padding: 50px 20px 0 0;
+    margin-top: 8.375rem;
   }
 
-  .button__demo{
-    width: 337.58px;
-    height: 65px;
-    border-radius: 0px;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: white;
-    background-color: #031B34;
-    border: 2px solid #fff; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 2;
-    margin-top: 10%;
-    margin-left: 40%;
-  }
 
-  .footer__logo{
-    display: flex;
-    margin-top: 10%;
-    margin-left: 8%;
-    width: 220px;
-    height: 117px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+  .footer__title {
+      text-align: center;
+      margin-top: 8rem;
+      margin-bottom: 5rem;
+      font-size: 3.875rem;
+      font-weight: bold;
+      line-height: 4.6875rem;
+      width: 51.3125rem;
   }
 
   .logo__gpt3{
     width: 118px;
     height: 30px;
-    margin-right: 20px;
   }
 
   .logo__text__1{
     color: #fff;
     line-height: 1.5;
-    margin-top: 15%;
     max-width: 100%; 
     font-size: 0.75rem;
   }
@@ -977,48 +834,75 @@
     margin-top: 20px; 
   }
 
+  .button__demo {
+      width: auto;
+      margin-bottom: 40px;
+      width: 337.58px;
+      height: 65px;
+      border-radius: 0px;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: white;
+      background-color: #031B34;
+      border: 1px solid #fff; 
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 2;
+  }
+
+  .footer__logo img {
+      margin-bottom: 30px;
+  }
+
+  .rights {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 92rem;
+      text-align: center;
+      background-color: #040C18;
+      size: 12px;
+  }
+
+
+    .footer__content {
+      display: flex;
+      justify-content: space-around; 
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 0;
+  }
+
+  .footer__logo, .footer__links, .footer__company, .footer__get__in__touch {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; 
+      margin: 100px 10px;
+  }
+
+  .footer__logo{
+    margin-right: 250px;
+  }
+
   .footer__links, .footer__company, .footer__get__in__touch {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 20px 0;
-    width: 100px;
-    height: 192px;
+      text-align: left;
   }
 
-  .footer__links {
-    margin-left: 45%;
-    margin-top: -8%;
-  }
-
-  .footer__company{
-    margin-top: -14.5%;
-    margin-left: 60%;
-    width: 200px;
-  }
-
-  .footer__get__in__touch{
-    width: 200px;
-    margin-left: 80%;
-    margin-top: -14.5%;
-  }
-  
   .links__title {
     margin-bottom: 30px;
     font-size: 0.875rem;
     font-weight: bold;
   }
-  
-  .item__links__footer {
-    margin-bottom: 30px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.75rem;
-  }
-  
+
   .item__links__footer:hover {
     text-decoration: underline;
-    color: #ff4a4a; /* Цвет при наведении */
+    color: #ff4a4a; 
   }
   
   .item__links__footer__get__in__touch {
@@ -1028,12 +912,16 @@
     font-size: 0.75rem;
   }
 
-  .rights{
-    display: flex;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    size: 12px;
+  .item__links__footer {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.75rem;
+  }
+  
+  .item__links__footer:hover {
+    text-decoration: underline;
+    color: #ff4a4a; 
   }
 
   /* Медиа запросы для адаптива */
