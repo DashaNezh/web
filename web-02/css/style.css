@@ -1,0 +1,1154 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: "ManropeBold";
+    src: url(../fonts/static/Manrope-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: "Manrope";
+    src: url(../fonts/static/Manrope-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "ManropeLight";
+    src: url(../fonts/static/Manrope-Light.ttf);
+  }
+  
+  /* Сброс базовых стилей */
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    outline: none;
+  }
+  
+  /* Общие стили для всего приложения */
+  
+  body {
+    background: #040C18;
+    padding: 0 0rem;
+    
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a,
+  button {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+  }
+  
+  a:hover,
+  button:hover {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+  }
+  
+  button:hover {
+    background-color: #ae67fa;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  
+  h1 {
+    font-size: 60px;
+    color: #ae67fa;
+  }
+  
+  h2 {
+    font-size: 34px;
+  }
+  
+  h1,
+  h2 {
+    font-family: "ManropeBold", sans-serif;
+    background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h3 {
+    font-family: "ManropeBold", sans-serif;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .btn {
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  
+  .primary-btn {
+    background-color: #ff4820;
+  }
+  
+  .section {
+    max-width: 1169px;
+    width: 100%;
+  }
+  
+  .lined_header {
+    background: url("../assets/img/gradient_line.svg") no-repeat 0 0 transparent;
+    padding: 1rem 0;
+  }
+  
+  /* Стили для Шапки */
+  
+  .header {
+    display: flex;
+    max-width: 1169px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem 0;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background: #031b34;
+    z-index: 10;
+  }
+  
+  .header .header-logo {
+    width: 162px;
+  }
+  
+  .header .header__menu .menu {
+    display: flex;
+    column-gap: 2rem;
+  }
+  
+  .header .header__menu .menu .menu__item a {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .header .header__menu .menu .menu__item:hover a {
+    border-bottom-color: #fff;
+  }
+  
+  .header .header__menu .menu .menu__item.active a {
+    color: #f49867;
+    border-bottom-color: #f49867;
+  }
+  
+  .header .cta_buttons {
+    display: flex;
+    column-gap: 1rem;
+  }
+  
+  /* Стили для первого экрана (Хиро секция) */
+  
+  .hero_section {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+    min-height: 60vh;
+    margin: 14rem 0 3rem;
+  }
+  
+  .hero_section .hero_section__left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3rem;
+    width: 75%;
+  }
+  
+  .hero_section .hero_section__left .left__description {
+    color: #81afdd;
+  }
+  
+  .hero_section .hero_section__left .left__cta_buttons {
+    display: flex;
+    width: 100%;
+  }
+  
+  .hero_section .hero_section__left .left__cta_buttons input[type="text"] {
+    min-width: 250px;
+    width: 70%;
+    padding: 8px 32px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #052d56;
+    border-bottom: none;
+    background-color: #052d56;
+  }
+  
+  .hero_section .hero_section__left .left__cta_buttons .btn {
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .hero_section .hero_section__right {
+    height: 100%;
+  }
+  
+  .hero_section .hero_section__right img {
+    width: 100%;
+  }
+
+  .left__social_approve {
+    display: flex;
+    align-items: center; 
+    position: relative; 
+  }
+
+  .ellipse31,
+  .ellipse32,
+  .ellipse33,
+  .ellipse34,
+  .ellipse35,
+  .ellipse36,
+  .ellipse37 {
+      margin-right: -10px; 
+  }
+
+  .ellipse37 {
+      position: relative; 
+  }
+
+  .ellipse37__text {
+      position: absolute; 
+      top: 50%;
+      left: 28.5%;
+      transform: translate(-50%, -50%);
+      font-size: 8px; 
+      color: #000; 
+      z-index: 1; 
+  }
+
+  .text__social__approve {
+      margin-left: 15px;
+      font-size: 12px; 
+      color: #fff; 
+  }
+
+  
+  /* Секция брендов */
+  
+  .brands_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 6rem 0;
+    column-gap: 3rem;
+  }
+  
+  /* Что такое Chat GPT */
+  
+  .what_is_chatgpt_section {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin: 6rem 0;
+    row-gap: 7rem;
+    background: url(../assets/img/what_is_gpt_3_bg.svg) no-repeat 0 0 / cover;
+  }
+  
+  .what_is_chatgpt_section .what_is_chatgpt_section__top {
+    display: flex;
+  }
+  
+  .what_is_chatgpt_section .what_is_chatgpt_section__top .top__header {
+    flex: 30%;
+  }
+  
+  .what_is_chatgpt_section .what_is_chatgpt_section__top .top__content {
+    flex: 65%;
+    color: #81afdd;
+    font-size: 14px;
+  }
+  
+  .what_is_chatgpt_section .what_is_chatgpt_section__middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  
+  .what_is_chatgpt_section .what_is_chatgpt_section__middle .middle__header {
+    width: 500px;
+  }
+  
+  .what_is_chatgpt_section .what_is_chatgpt_section__middle a {
+    color: #ff8a71;
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .what_is_chatgpt_section .what_is_chatgpt_section__middle a:hover {
+    border-bottom: 1px solid #ff8a71;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  
+  .what_is_chatgpt_section .what_is_chatgpt_section__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 2rem;
+  }
+  
+  .what_is_chatgpt_section .what_is_chatgpt_section__bottom .bottom__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  
+  .what_is_chatgpt_section
+    .what_is_chatgpt_section__bottom
+    .bottom__container
+    .container__content {
+    color: #81afdd;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  /* Будущее наступило */
+  
+  .future_here {
+    display: flex;
+    column-gap: 6rem;
+    margin: 6rem 0 2rem;
+  }
+  
+  .future_here .future_here__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
+    flex: 2;
+  }
+  
+  /* .future_here .future_here__left .left__header {
+  } */
+  
+  .future_here .future_here__left .left__cta {
+    color: #f49867;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .future_here .future_here__left a:hover {
+    border-bottom: 1px solid #f49867;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  
+  .future_here .future_here__right {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+  
+  .future_here .future_here__right .right__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .future_here .future_here__right .right__container .container__header {
+    width: 35%;
+  }
+  
+  .future_here .future_here__right .right__container .container__content {
+    width: 55%;
+    color: #81afdd;
+  }
+  .feature__right__now{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    width: 1044px;
+    height: 607.53px;
+  }
+
+  .container__feature__image{
+    position: relative;
+    width: 546px;
+    height: 607.53px;
+  }
+  .img__girl__feature{
+    position: absolute;
+    width: 474.85px;
+    height: 542.53px;
+    left: 80px;
+    top: 65px;
+    z-index: 4;
+  }
+
+  .container__content__right{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 479px;
+    height: 334px;
+    margin-top: 25%;
+    margin-left: 30%;
+  }
+  .container__content__feature__1{
+    position: static;
+    text-decoration: none;
+    size: 16px;
+    line-height: 30px;
+    color: #71E5FF;
+    margin-bottom: 2%;
+  }
+  .container__header__feature{
+    position: static; 
+    width: 426px;
+    height: 90px;
+    margin-bottom: 5%;
+    size: 34px;
+    line-height: 45px;
+  }
+  .container__content__feature__main{
+    position: static;
+    margin-bottom: 3%;
+    size: 16px;
+    color: #81AFDD;
+    line-height: 30px;
+  }
+  .container__content__feature__2{
+    position: static;
+    text-decoration: none;
+    size: 16px;
+    line-height: 30px;
+    color: #FF8A71;
+  }
+
+  .container__content__feature__1:hover {
+    text-decoration: underline;
+    color: #71E5FF; /* Цвет при наведении */
+  }
+
+  .container__content__feature__2:hover {
+    text-decoration: underline;
+    color: #FF8A71; /* Цвет при наведении */
+  }
+
+  .blog{
+    z-index: 1;
+    padding-bottom: 130px;
+  }
+  
+  .blog .top__header{
+    width: 800px;
+    font-size: 3.875rem;
+    padding-bottom: 5rem;
+  }
+  
+  .blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px; 
+  }
+  
+  .blog-container-mini{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .blog-row{
+    display: flex;
+    gap: 50px;
+  }
+  
+  .container__text.text_news_1{
+    padding: 30px 25px;
+  }
+  
+  .container__text.text_news{
+    padding: 5px 20px;
+  }
+  
+  .blog-item.news img{
+    width: 300px;
+  }
+  
+  
+  .blog-item.news_1{
+    padding: 0;
+    background-color: #042C54;
+    width: 400px;
+    height: 680px;
+    clip-path: 
+      polygon(
+        0% 5%,     /* верхняя левая */
+        10% 0%,     /* верхняя левая */
+        100% 0%,    /* верхняя правая */
+        100% 100%,   /* верхняя правая */
+        100% 100%,  /* нижняя правая */
+        100% 100%,  /* нижняя правая */
+        100% 100%,   /* нижняя левая */
+        0 100%      /* нижняя левая */
+      );
+  } 
+  
+  .date, .continue_news {
+    font-size: 12px;
+  }
+  
+  .blog-item .container__text.text_news .name_news{
+    font-size: 19px;
+  }
+  
+  .blog .blog-container .blog-row .blog-item.news_1 img{
+    width: 400px;
+    margin: 0;
+  }
+  
+  .blog-item{
+    width: 300px;
+    height: 315px;
+    padding: 0;
+    background-color: #042C54;
+  }
+  
+  .name_news{
+    padding-bottom: 18%;
+  }
+  
+  .name_news_1{
+    padding-bottom: 60%;
+  }
+  
+  .blog-item.news{
+    clip-path: 
+      polygon(
+        0% 10%,     /* верхняя левая */
+        10% 0%,     /* верхняя левая */
+        100% 0%,    /* верхняя правая */
+        100% 100%,   /* верхняя правая */
+        100% 100%,  /* нижняя правая */
+        100% 100%,  /* нижняя правая */
+        100% 100%,   /* нижняя левая */
+        0 100%      /* нижняя левая */
+      );
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90rem;
+    height: 968x;
+    padding: 50px 20px 0 0;
+    margin-top: 8.375rem;
+  }
+
+  .footer__title__and__btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .footer__title {
+      text-align: center;
+      margin-top: 8rem;
+      margin-bottom: 5rem;
+      font-size: 3.875rem;
+      font-weight: bold;
+      line-height: 4.6875rem;
+      width: 51.3125rem;
+  }
+
+  .logo__gpt3{
+    width: 118px;
+    height: 30px;
+  }
+
+  .logo__text__1{
+    color: #fff;
+    line-height: 1.5;
+    max-width: 100%; 
+    font-size: 0.75rem;
+  }
+
+  .logo__text__1:last-of-type {
+    margin-top: 20px; 
+  }
+
+  .button__demo {
+      width: auto;
+      align-items: center;
+      width: 337.58px;
+      height: 65px;
+      border-radius: 0px;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: white;
+      background-color: #031B34;
+      border: 1px solid #fff; 
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 2;
+  }
+
+  .footer__logo img {
+      margin-bottom: 30px;
+  }
+
+  .rights {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 92rem;
+      text-align: center;
+      background-color: #040C18;
+      size: 12px;
+  }
+
+
+    .footer__content {
+      display: flex;
+      justify-content: space-around; 
+      width: 100%;
+      max-width: 1200px;
+  }
+
+  .footer__logo, .footer__links, .footer__company, .footer__get__in__touch {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; 
+  }
+
+  .footer__links, .footer__company, .footer__get__in__touch {
+      text-align: left;
+  }
+
+  .links__title {
+    margin-bottom: 30px;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+
+  .item__links__footer:hover {
+    text-decoration: underline;
+    color: #ff4a4a; 
+  }
+  
+  .item__links__footer__get__in__touch {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.75rem;
+  }
+
+  .item__links__footer {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.75rem;
+  }
+  
+  .item__links__footer:hover {
+    text-decoration: underline;
+    color: #ff4a4a; 
+  }
+
+    /* Основные стили для заголовка */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #031b34; /* Цвет фона для заголовка */
+  }
+
+  .header__menu {
+    display: flex; /* Меню отображается по умолчанию */
+  }
+
+  .hamburger {
+    display: none; /* Гамбургер скрыт на компьютере */
+    cursor: pointer;
+  }
+
+  .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white; /* Цвет полосок гамбургера */
+  }
+
+  .brands_section {
+    display: flex; /* Используем флекс для выравнивания изображений */
+    justify-content: center; /* Центрируем логотипы */
+    flex-wrap: wrap; /* Позволяем переносить логотипы на следующую строку при необходимости */
+    padding: 2rem; /* Отступы вокруг секции */
+    background: #040C18; /* Фоновый цвет для секции */
+  }
+  
+  .brands_section__img {
+    max-width: 100px; /* Ограничиваем ширину логотипов */
+    margin: 1rem; /* Отступы между логотипами */
+    flex: 1; /* Позволяем логотипам занимать равное пространство */
+    transition: transform 0.3s; /* Плавный эффект при наведении */
+  }
+  
+  .brands_section__img:hover {
+    transform: scale(1.1); /* Увеличиваем логотип при наведении */
+  }
+
+  .what_is_chatgpt_section {
+    padding: 2rem; /* Отступы вокруг секции */
+  }
+  
+  .what_is_chatgpt_section__top,
+  .what_is_chatgpt_section__middle,
+  .what_is_chatgpt_section__bottom {
+    margin-bottom: 2rem; /* Отступы между блоками */
+  }
+  
+  .top__header,
+  .middle__header,
+  .container__header {
+    font-size: 2rem; /* Размер заголовков */
+  }
+  
+  .top__content,
+  .container__content {
+    font-size: 1rem; /* Размер текста */
+  }
+  
+  .middle_cta {
+    color: #ff8a71;
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+  }
+  
+  /* Flexbox для нижнего контейнера */
+  .what_is_chatgpt_section__bottom {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение контейнеров */
+    flex-wrap: wrap; /* Позволяем переносить элементы на новую строку */
+  }
+  
+  /* Стили для нижних контейнеров */
+  .bottom__container {
+    flex: 1; /* Позволяем контейнерам занимать равное пространство */
+    min-width: 200px; /* Минимальная ширина для контейнеров */
+    margin: 1rem; /* Отступы между контейнерами */
+  }
+
+  .future_here {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    padding: 2rem; /* Отступы для больших экранов */
+  }
+  
+  .future_here__left {
+    flex: 1; /* Занимает 1/2 доступного пространства */
+  }
+  
+  .future_here__right {
+    display: flex;
+    align-items: center; /* Центрируем содержимое по вертикали */
+    padding: 2rem; /* Отступы для всех сторон */
+  }
+  
+  .right__container {
+    margin-bottom: 1.5rem; /* Отступ между контейнерами */
+  }
+
+  .feature__right__now {
+    display: flex;
+    align-items: center; /* Центрируем содержимое по вертикали */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    padding: 2rem; /* Отступы для всех сторон */
+  }
+  
+  .container__feature__image {
+    flex: 1; /* Занимает 1/2 доступного пространства */
+  }
+  
+  .container__content__right {
+    flex: 1; /* Занимает 1/2 доступного пространства */
+    display: flex;
+    flex-direction: column; /* Упорядочим содержимое вертикально */
+    justify-content: center; /* Центрируем содержимое по вертикали */
+  }
+  
+  .container__header__feature {
+    margin: 1rem 0; /* Отступы сверху и снизу для заголовка */
+  }
+
+  .container__cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72rem;
+    margin: 6rem 4rem;
+    padding: 40px;
+    gap: 15rem;
+    background: url(../assets/img/Rectangle26.svg) no-repeat 0 0 / cover;
+  }
+
+  .container__cta .container__button__cta .cta__button{
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 40px;
+    width: 190px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .container__cta .container__cta__main .text__cta__1 {
+    color: #000000;
+  }
+
+  .container__cta .container__cta__main .text__cta__2 {
+    color: #000000;
+    text-decoration: none;
+    width: 600px; 
+    line-height: 35px;
+  }
+
+  
+
+  /* Медиа запросы для адаптива */
+  @media screen and (max-width: 766px) {
+    .header__menu {
+        display: none; /* Обычное меню скрыто на мобильной версии */
+        flex-direction: column; /* Вертикальное расположение элементов меню */
+        position: absolute;
+        top: 60px; /* Настройте в зависимости от высоты заголовка */
+        left: 0;
+        width: 100%;
+        background: rgba(3, 27, 52, 0.9); /* Полупрозрачный фон */
+        z-index: 1000;
+    }
+
+    .hamburger {
+        display: block; /* Гамбургер отображается только на мобильных устройствах */
+    }
+
+    .header__menu.open {
+        display: flex; /* Показываем меню при открытии */
+    }
+
+    .header__menu .menu {
+        list-style: none; /* Убрать маркеры списка */
+        padding: 0; /* Убрать отступы */
+        margin: 0; /* Убрать маргин */
+        display: flex;
+        flex-direction: column; /* Вертикальное расположение элементов */
+        row-gap: 20px; /* Отступы между элементами */
+        text-align: center; /* Центрировать текст */
+    }
+
+    .header__menu .menu__item {
+        padding: 1rem;
+        color: white; /* Цвет текста */
+    }
+
+    .menu__item a {
+        font-size: 24px; /* Размер шрифта для элементов меню */
+        color: #fff; /* Цвет текста */
+        text-decoration: none; /* Убрать подчеркивание */
+    }
+
+    .menu__item a:hover {
+        color: #ffcc00; /* Цвет при наведении */
+    }
+
+    .hero_section {
+      flex-direction: column; /* Вертикальное расположение элементов */
+      align-items: center; /* Центрирование элементов */
+    }
+  
+    .hero_section__left,
+    .hero_section__right {
+      max-width: 100%; /* Ширина на мобильных устройствах */
+      text-align: center; /* Центрирование текста */
+    }
+  
+    .left__header {
+      font-size: 1.5rem; /* Уменьшаем размер шрифта заголовка для мобильных устройств */
+    }
+  
+    .left__description {
+      font-size: 0.9rem; /* Уменьшаем размер шрифта описания для мобильных устройств */
+    }
+  
+    .left__cta_buttons input {
+      width: 100%; /* Полное использование ширины для поля ввода */
+      margin-bottom: 1rem; /* Отступ снизу для мобильных устройств */
+    }
+  
+    .left__cta_buttons {
+      display: flex;
+      flex-direction: column; /* Вертикальное расположение кнопок */
+    }
+  
+    .left__social_approve {
+      justify-content: center; /* Центрируем элементы */
+    }
+    
+    .left__social_approve img {
+      max-width: 40px; /* Ограничиваем размер иконок */
+    }
+  
+    .text__social__approve {
+      margin-top: 0.5rem; /* Отступ сверху для текста, если нужно */
+      text-align: center; /* Центрируем текст */
+    }
+
+    .brands_section__img {
+      max-width: 80px; /* Уменьшаем ширину логотипов для мобильных */
+    }
+
+    .brands_section__img {
+      max-width: 70px; /* Уменьшаем размер логотипов на мобильных */
+    }
+
+    .top__header,
+    .middle__header,
+    .container__header {
+      font-size: 1.5rem; /* Уменьшаем размер заголовков на мобильных */
+    }
+
+    .top__content,
+    .container__content {
+      font-size: 0.9rem; /* Уменьшаем размер текста на мобильных */
+    }
+
+    .middle_cta {
+      font-size: 0.9rem; /* Уменьшаем размер текста кнопки */
+      margin-top: 1rem; /* Увеличиваем отступ сверху на мобильных */
+    }
+
+    .what_is_chatgpt_section__bottom {
+      flex-direction: column; /* Располагаем контейнеры в столбик на мобильных */
+    }
+
+    .future_here {
+      flex-direction: column; /* Меняем порядок на столбик */
+      align-items: flex-start; /* Выровнять по левому краю */
+    }
+  
+    .future_here__left {
+      margin-bottom: 1.5rem; /* Отступ снизу для левой части */
+    }
+  
+    .future_here__right {
+      width: 100%; /* Ширина на мобильных устройствах */
+    }
+  
+    .right__container {
+      margin-bottom: 1rem; /* Отступ между контейнерами на мобильных устройствах */
+    }
+  
+    .left__cta {
+      margin-top: 1rem; /* Отступ сверху для кнопки на мобильных устройствах */
+    }
+
+    .img__girl__feature{
+      width: 80%;
+    }
+
+    .feature__right__now {
+      flex-direction: column; 
+      justify-content: space-between; /* Распределяем пространство между элементами */
+      align-items: center; /* Центрируем по вертикали */
+      height: auto;
+    }
+  
+    .container__feature__image {
+      margin-right: 2rem; /* Добавляем отступ справа для изображения */
+      margin-bottom: 0; /* Убираем отступ снизу для изображения */
+    }
+  
+    .container__content__right {
+      margin-top: 65%;
+      max-width: 40%; /* Ограничиваем ширину текста на больших экранах */
+      text-align: left; /* Выравниваем текст влево */
+      margin-right: 32%;
+    }
+
+    .container__cta {
+      flex-direction: column; /* Изменение на колонку */
+      align-items: center; /* Центрирование элементов */
+      height: auto; /* Высота по содержимому */
+      padding: 20px; /* Уменьшение отступов */
+    }
+
+    .container__cta .container__cta__main {
+        text-align: center; /* Центрирование текста */
+        width: 30%;
+    }
+
+    .container__cta .container__button__cta {
+        margin-top: 20px; /* Отступ сверху для кнопки */
+    }
+
+    /* Увеличение высоты контейнера на маленьких экранах */
+    .container__cta {
+        height: 50vh; /* Установка высоты на 100% высоты экрана */
+    }
+
+    .blog{
+      padding-left: 50px;
+    }
+
+    .blog-container {
+      flex-direction: column; /* Устанавливаем колонку для меньших экранов */
+      align-items: center; /* Центрируем элементы */
+      gap: 30px; /* Уменьшаем промежутки между элементами */
+    }
+
+    .blog-row {
+        flex-direction: column; /* Устанавливаем колонку для меньших экранов */
+        gap: 30px; /* Уменьшаем промежутки между элементами */
+    }
+
+    .blog-item {
+        width: 100%; /* Задаем ширину 100% для блоков */
+        max-width: 400px; /* Устанавливаем максимальную ширину */
+    }
+
+    .top__header {
+      font-size: 2rem !important; /* Уменьшаем размер заголовка */
+      text-align: left; /* Центрируем заголовок */
+      padding-bottom: 2rem; /* Уменьшаем отступ снизу */
+    }
+
+    .footer {
+      padding: 30px 10px; /* Уменьшаем отступы */
+    }
+
+    .footer__title {
+        font-size: 2rem !important; /* Уменьшаем размер заголовка */
+        text-align: center;
+        line-height: 3rem; /* Корректируем высоту строки */
+        width: 60%; /* Убираем фиксированную ширину для заголовка */
+    }
+
+    .button__demo {
+        width: 100%; /* Кнопка занимает всю ширину */
+        margin: 0; /* Убираем отступы */
+        height: 50px; /* Уменьшаем высоту кнопки */
+        font-size: 16px; /* Уменьшаем размер шрифта кнопки */
+    }
+
+    .footer__content {
+        flex-direction: column; /* Располагаем элементы в столбик */
+        align-items: center; /* Центрируем элементы */
+    }
+
+    .footer__logo, .footer__links, .footer__company, .footer__get__in__touch {
+        margin: 20px 0; /* Уменьшаем отступы между блоками */
+        align-items: center; /* Центрируем текст в блоках */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .rights {
+        font-size: 0.75rem; /* Уменьшаем размер шрифта в правам */
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .container__cta {
+        flex-direction: column; /* Изменить направление на колонку */
+        align-items: center; /* Центрировать элементы по горизонтали */
+        gap: 10px; /* Уменьшить отступ между элементами */
+    }
+
+    .container__cta .container__button__cta {
+        margin-top: 20px; /* Добавить отступ сверху для кнопки */
+    }
+
+    .container__cta .container__cta__main .text__cta__2 {
+        width: auto; /* Убрать фиксированную ширину для мобильной версии */
+        text-align: center; /* Центрировать текст */
+        align-items: center;
+    }
+
+    .container__cta__main, .text__cta__2 {
+      width: 50%; /* Убрать фиксированную ширину для мобильной версии */
+      text-align: center; /* Центрировать текст */
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .brands_section__img {
+      max-width: 50px; /* Еще меньше логотипы на маленьких экранах */
+    } 
+
+    .footer__title {
+      font-size: 2rem; /* Дальнейшее уменьшение заголовка */
+      line-height: 2.5rem; /* Дальнейшее уменьшение высоты строки */
+    }
+
+    .button__demo {
+        height: 45px; /* Еще больше уменьшаем высоту кнопки */
+        font-size: 14px; /* Уменьшаем размер шрифта кнопки */
+    }
+
+    .item__links__footer, .item__links__footer__get__in__touch {
+        font-size: 0.65rem; /* Уменьшаем размер шрифта для ссылок */
+    }
+  }
+
+  /* Для больших экранов, если заголовки накладываются */
+  @media screen and (min-width: 769px) {
+    .right__container {
+      margin-bottom: 2rem; /* Увеличиваем отступ между контейнерами на больших экранах */
+    }
+  }
