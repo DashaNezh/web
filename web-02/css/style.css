@@ -698,21 +698,20 @@
     color: #ff4a4a; 
   }
 
-    /* Основные стили для заголовка */
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: #031b34; /* Цвет фона для заголовка */
+    background: #031b34; 
   }
 
   .header__menu {
-    display: flex; /* Меню отображается по умолчанию */
+    display: flex; 
   }
 
   .hamburger {
-    display: none; /* Гамбургер скрыт на компьютере */
+    display: none; 
     cursor: pointer;
   }
 
@@ -721,47 +720,47 @@
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: white; /* Цвет полосок гамбургера */
+    background-color: white; 
   }
 
   .brands_section {
-    display: flex; /* Используем флекс для выравнивания изображений */
-    justify-content: center; /* Центрируем логотипы */
-    flex-wrap: wrap; /* Позволяем переносить логотипы на следующую строку при необходимости */
-    padding: 2rem; /* Отступы вокруг секции */
-    background: #040C18; /* Фоновый цвет для секции */
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    padding: 2rem; 
+    background: #040C18; 
   }
   
   .brands_section__img {
-    max-width: 100px; /* Ограничиваем ширину логотипов */
-    margin: 1rem; /* Отступы между логотипами */
-    flex: 1; /* Позволяем логотипам занимать равное пространство */
-    transition: transform 0.3s; /* Плавный эффект при наведении */
+    max-width: 100px; 
+    margin: 1rem; 
+    flex: 1;
+    transition: transform 0.3s; 
   }
   
   .brands_section__img:hover {
-    transform: scale(1.1); /* Увеличиваем логотип при наведении */
+    transform: scale(1.1); 
   }
 
   .what_is_chatgpt_section {
-    padding: 2rem; /* Отступы вокруг секции */
+    padding: 2rem; 
   }
   
   .what_is_chatgpt_section__top,
   .what_is_chatgpt_section__middle,
   .what_is_chatgpt_section__bottom {
-    margin-bottom: 2rem; /* Отступы между блоками */
+    margin-bottom: 2rem;
   }
   
   .top__header,
   .middle__header,
   .container__header {
-    font-size: 2rem; /* Размер заголовков */
+    font-size: 2rem;
   }
   
   .top__content,
   .container__content {
-    font-size: 1rem; /* Размер текста */
+    font-size: 1rem; 
   }
   
   .middle_cta {
@@ -770,61 +769,60 @@
     border-bottom: 1px solid transparent;
   }
   
-  /* Flexbox для нижнего контейнера */
   .what_is_chatgpt_section__bottom {
     display: flex;
-    justify-content: space-between; /* Равномерное распределение контейнеров */
-    flex-wrap: wrap; /* Позволяем переносить элементы на новую строку */
+    justify-content: space-between;
+    flex-wrap: wrap; 
   }
   
-  /* Стили для нижних контейнеров */
+
   .bottom__container {
-    flex: 1; /* Позволяем контейнерам занимать равное пространство */
-    min-width: 200px; /* Минимальная ширина для контейнеров */
-    margin: 1rem; /* Отступы между контейнерами */
+    flex: 1; 
+    min-width: 200px; 
+    margin: 1rem; 
   }
 
   .future_here {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Выравнивание по верхнему краю */
-    padding: 2rem; /* Отступы для больших экранов */
+    align-items: flex-start;
+    padding: 2rem; 
   }
   
   .future_here__left {
-    flex: 1; /* Занимает 1/2 доступного пространства */
+    flex: 1; 
   }
   
   .future_here__right {
     display: flex;
-    align-items: center; /* Центрируем содержимое по вертикали */
-    padding: 2rem; /* Отступы для всех сторон */
+    align-items: center; 
+    padding: 2rem; 
   }
   
   .right__container {
-    margin-bottom: 1.5rem; /* Отступ между контейнерами */
+    margin-bottom: 1.5rem; 
   }
 
   .feature__right__now {
     display: flex;
-    align-items: center; /* Центрируем содержимое по вертикали */
-    justify-content: space-between; /* Распределяем пространство между элементами */
-    padding: 2rem; /* Отступы для всех сторон */
+    align-items: center;
+    justify-content: space-between; 
+    padding: 2rem; 
   }
   
   .container__feature__image {
-    flex: 1; /* Занимает 1/2 доступного пространства */
+    flex: 1; 
   }
   
   .container__content__right {
-    flex: 1; /* Занимает 1/2 доступного пространства */
+    flex: 1; 
     display: flex;
-    flex-direction: column; /* Упорядочим содержимое вертикально */
-    justify-content: center; /* Центрируем содержимое по вертикали */
+    flex-direction: column; 
+    justify-content: center; 
   }
   
   .container__header__feature {
-    margin: 1rem 0; /* Отступы сверху и снизу для заголовка */
+    margin: 1rem 0; 
   }
 
   .container__cta{
@@ -864,138 +862,142 @@
   /* Медиа запросы для адаптива */
   @media screen and (max-width: 766px) {
     .header__menu {
-        display: none; /* Обычное меню скрыто на мобильной версии */
-        flex-direction: column; /* Вертикальное расположение элементов меню */
+        display: none; 
+        flex-direction: column; 
         position: absolute;
-        top: 60px; /* Настройте в зависимости от высоты заголовка */
+        top: 60px; 
         left: 0;
         width: 100%;
-        background: rgba(3, 27, 52, 0.9); /* Полупрозрачный фон */
+        background: rgba(3, 27, 52, 0.9); 
         z-index: 1000;
     }
 
     .hamburger {
-        display: block; /* Гамбургер отображается только на мобильных устройствах */
+        display: block; 
     }
 
     .header__menu.open {
-        display: flex; /* Показываем меню при открытии */
+        display: flex; 
     }
 
     .header__menu .menu {
-        list-style: none; /* Убрать маркеры списка */
-        padding: 0; /* Убрать отступы */
-        margin: 0; /* Убрать маргин */
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
         display: flex;
-        flex-direction: column; /* Вертикальное расположение элементов */
-        row-gap: 20px; /* Отступы между элементами */
-        text-align: center; /* Центрировать текст */
+        flex-direction: column;
+        row-gap: 20px; 
+        text-align: center; 
     }
 
     .header__menu .menu__item {
         padding: 1rem;
-        color: white; /* Цвет текста */
+        color: white; 
     }
 
     .menu__item a {
-        font-size: 24px; /* Размер шрифта для элементов меню */
-        color: #fff; /* Цвет текста */
-        text-decoration: none; /* Убрать подчеркивание */
+        font-size: 1rem; 
+        color: #fff; 
+        text-decoration: none; 
     }
 
     .menu__item a:hover {
-        color: #ffcc00; /* Цвет при наведении */
+        color: #ffcc00; 
     }
 
     .hero_section {
-      flex-direction: column; /* Вертикальное расположение элементов */
-      align-items: center; /* Центрирование элементов */
+      flex-direction: column; 
+      align-items: center; 
     }
   
     .hero_section__left,
     .hero_section__right {
-      max-width: 100%; /* Ширина на мобильных устройствах */
-      text-align: center; /* Центрирование текста */
+      max-width: 100%; 
+      text-align: center; 
     }
   
     .left__header {
-      font-size: 1.5rem; /* Уменьшаем размер шрифта заголовка для мобильных устройств */
+      font-size: 1.5rem; 
     }
   
     .left__description {
-      font-size: 0.9rem; /* Уменьшаем размер шрифта описания для мобильных устройств */
+      font-size: 0.9rem; 
     }
   
     .left__cta_buttons input {
-      width: 100%; /* Полное использование ширины для поля ввода */
-      margin-bottom: 1rem; /* Отступ снизу для мобильных устройств */
+      width: 100%; 
+      margin-bottom: 1rem;
     }
   
     .left__cta_buttons {
       display: flex;
-      flex-direction: column; /* Вертикальное расположение кнопок */
+      flex-direction: column; 
     }
   
     .left__social_approve {
-      justify-content: center; /* Центрируем элементы */
+      justify-content: center; 
     }
     
     .left__social_approve img {
-      max-width: 40px; /* Ограничиваем размер иконок */
+      max-width: 40px; 
     }
   
     .text__social__approve {
-      margin-top: 0.5rem; /* Отступ сверху для текста, если нужно */
-      text-align: center; /* Центрируем текст */
+      margin-top: 0.5rem; 
+      text-align: center; 
     }
 
     .brands_section__img {
-      max-width: 80px; /* Уменьшаем ширину логотипов для мобильных */
+      max-width: 80px; 
     }
 
     .brands_section__img {
-      max-width: 70px; /* Уменьшаем размер логотипов на мобильных */
+      max-width: 70px; 
     }
 
     .top__header,
     .middle__header,
     .container__header {
-      font-size: 1.5rem; /* Уменьшаем размер заголовков на мобильных */
+      font-size: 1.5rem; 
     }
 
     .top__content,
     .container__content {
-      font-size: 0.9rem; /* Уменьшаем размер текста на мобильных */
+      font-size: 0.9rem; 
     }
 
     .middle_cta {
-      font-size: 0.9rem; /* Уменьшаем размер текста кнопки */
-      margin-top: 1rem; /* Увеличиваем отступ сверху на мобильных */
+      font-size: 0.75rem; 
+      margin-top: 1rem; 
+    }
+
+    .right__container h3{
+      font-size: 1.25rem;
     }
 
     .what_is_chatgpt_section__bottom {
-      flex-direction: column; /* Располагаем контейнеры в столбик на мобильных */
+      flex-direction: column; 
     }
 
     .future_here {
-      flex-direction: column; /* Меняем порядок на столбик */
-      align-items: flex-start; /* Выровнять по левому краю */
+      flex-direction: column; 
+      align-items: flex-start; 
     }
   
     .future_here__left {
-      margin-bottom: 1.5rem; /* Отступ снизу для левой части */
+      margin-bottom: 1.5rem; 
     }
   
     .future_here__right {
-      width: 100%; /* Ширина на мобильных устройствах */
+      width: 100%; 
     }
   
     .right__container {
-      margin-bottom: 1rem; /* Отступ между контейнерами на мобильных устройствах */
+      margin-bottom: 1rem; 
     }
   
     .left__cta {
-      margin-top: 1rem; /* Отступ сверху для кнопки на мобильных устройствах */
+      margin-top: 1rem; 
     }
 
     .img__girl__feature{
@@ -1004,42 +1006,42 @@
 
     .feature__right__now {
       flex-direction: column; 
-      justify-content: space-between; /* Распределяем пространство между элементами */
-      align-items: center; /* Центрируем по вертикали */
+      justify-content: space-between; 
+      align-items: center; 
       height: auto;
     }
   
     .container__feature__image {
-      margin-right: 2rem; /* Добавляем отступ справа для изображения */
-      margin-bottom: 0; /* Убираем отступ снизу для изображения */
+      margin-right: 2rem;
+      margin-bottom: 0; 
     }
   
     .container__content__right {
       margin-top: 65%;
-      max-width: 40%; /* Ограничиваем ширину текста на больших экранах */
-      text-align: left; /* Выравниваем текст влево */
+      max-width: 40%; 
+      text-align: left; 
       margin-right: 32%;
     }
 
     .container__cta {
-      flex-direction: column; /* Изменение на колонку */
-      align-items: center; /* Центрирование элементов */
-      height: auto; /* Высота по содержимому */
-      padding: 20px; /* Уменьшение отступов */
+      flex-direction: column; 
+      align-items: center; 
+      height: auto; 
+      padding: 20px; 
     }
 
     .container__cta .container__cta__main {
-        text-align: center; /* Центрирование текста */
+        text-align: center; 
         width: 30%;
     }
 
     .container__cta .container__button__cta {
-        margin-top: 20px; /* Отступ сверху для кнопки */
+        margin-top: 20px;
     }
 
-    /* Увеличение высоты контейнера на маленьких экранах */
+    
     .container__cta {
-        height: 50vh; /* Установка высоты на 100% высоты экрана */
+        height: 50vh; 
     }
 
     .blog{
@@ -1047,108 +1049,111 @@
     }
 
     .blog-container {
-      flex-direction: column; /* Устанавливаем колонку для меньших экранов */
-      align-items: center; /* Центрируем элементы */
-      gap: 30px; /* Уменьшаем промежутки между элементами */
+      flex-direction: column; 
+      align-items: center; 
+      gap: 30px; 
     }
 
     .blog-row {
-        flex-direction: column; /* Устанавливаем колонку для меньших экранов */
-        gap: 30px; /* Уменьшаем промежутки между элементами */
+        flex-direction: column; 
+        gap: 30px; 
     }
 
     .blog-item {
-        width: 100%; /* Задаем ширину 100% для блоков */
-        max-width: 400px; /* Устанавливаем максимальную ширину */
+        width: 100%; 
+        max-width: 400px;
     }
 
     .top__header {
-      font-size: 2rem !important; /* Уменьшаем размер заголовка */
-      text-align: left; /* Центрируем заголовок */
-      padding-bottom: 2rem; /* Уменьшаем отступ снизу */
+      font-size: 2rem !important; 
+      text-align: left; 
+      padding-bottom: 2rem; 
     }
 
     .footer {
-      padding: 30px 10px; /* Уменьшаем отступы */
+      padding: 30px 10px;
     }
 
     .footer__title {
-        font-size: 2rem !important; /* Уменьшаем размер заголовка */
+        font-size: 2rem !important; 
         text-align: center;
-        line-height: 3rem; /* Корректируем высоту строки */
-        width: 60%; /* Убираем фиксированную ширину для заголовка */
+        line-height: 3rem; 
+        width: 60%;
     }
 
     .button__demo {
-        width: 100%; /* Кнопка занимает всю ширину */
-        margin: 0; /* Убираем отступы */
-        height: 50px; /* Уменьшаем высоту кнопки */
-        font-size: 16px; /* Уменьшаем размер шрифта кнопки */
+        width: 100%; 
+        margin: 0; 
+        height: 50px; 
+        font-size: 16px;
     }
 
     .footer__content {
-        flex-direction: column; /* Располагаем элементы в столбик */
-        align-items: center; /* Центрируем элементы */
+        flex-direction: column; 
+        align-items: center;
     }
 
     .footer__logo, .footer__links, .footer__company, .footer__get__in__touch {
-        margin: 20px 0; /* Уменьшаем отступы между блоками */
-        align-items: center; /* Центрируем текст в блоках */
-        text-align: center; /* Центрируем текст */
+        margin: 20px 0; 
+        align-items: center; 
+        text-align: center;
     }
 
     .rights {
-        font-size: 0.75rem; /* Уменьшаем размер шрифта в правам */
+        font-size: 0.75rem; 
     }
   }
 
   @media (max-width: 1024px) {
     .container__cta {
-        flex-direction: column; /* Изменить направление на колонку */
-        align-items: center; /* Центрировать элементы по горизонтали */
-        gap: 10px; /* Уменьшить отступ между элементами */
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px; 
     }
 
     .container__cta .container__button__cta {
-        margin-top: 20px; /* Добавить отступ сверху для кнопки */
+        margin-top: 20px;
     }
 
     .container__cta .container__cta__main .text__cta__2 {
-        width: auto; /* Убрать фиксированную ширину для мобильной версии */
-        text-align: center; /* Центрировать текст */
+        width: auto; 
+        text-align: center; 
         align-items: center;
     }
 
     .container__cta__main, .text__cta__2 {
-      width: 50%; /* Убрать фиксированную ширину для мобильной версии */
-      text-align: center; /* Центрировать текст */
+      width: 50%; 
+      text-align: center; 
       align-items: center;
+    }
+    .right__container h3{
+      font-size: 1.25rem;
     }
   }
 
   @media screen and (max-width: 480px) {
     .brands_section__img {
-      max-width: 50px; /* Еще меньше логотипы на маленьких экранах */
+      max-width: 50px; 
     } 
 
     .footer__title {
-      font-size: 2rem; /* Дальнейшее уменьшение заголовка */
-      line-height: 2.5rem; /* Дальнейшее уменьшение высоты строки */
+      font-size: 2rem; 
+      line-height: 2.5rem; 
     }
 
     .button__demo {
-        height: 45px; /* Еще больше уменьшаем высоту кнопки */
-        font-size: 14px; /* Уменьшаем размер шрифта кнопки */
+        height: 45px;
+        font-size: 14px; 
     }
 
     .item__links__footer, .item__links__footer__get__in__touch {
-        font-size: 0.65rem; /* Уменьшаем размер шрифта для ссылок */
+        font-size: 0.65rem; 
     }
   }
 
   /* Для больших экранов, если заголовки накладываются */
   @media screen and (min-width: 769px) {
     .right__container {
-      margin-bottom: 2rem; /* Увеличиваем отступ между контейнерами на больших экранах */
+      margin-bottom: 2rem; 
     }
   }
