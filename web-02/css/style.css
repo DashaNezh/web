@@ -29,7 +29,8 @@
   body {
     background: #040C18;
     padding: 0 0rem;
-    
+    max-width: 100%;
+    overflow-x: hidden; 
   }
   
   .page {
@@ -399,7 +400,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 100%;
-    padding-left: 12%;
+    padding: 12%;
   }
 
   .container__content__right{
@@ -597,27 +598,28 @@
       z-index: 2;
   }
 
+  .footer{
+    background: url(../assets/img/Background.svg) no-repeat 0 0 / cover;
+    width: 100%;
+  }
+
   .footer__logo img {
       margin-bottom: 30px;
   }
 
   .rights {
       display: flex;
+      width: 100%;
       justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 92rem;
-      text-align: center;
       background-color: #040C18;
       size: 12px;
   }
-
 
     .footer__content {
       display: flex;
       justify-content: space-around; 
       width: 100%;
-      max-width: 1200px;
+      padding: 5%;
   }
 
   .footer__logo, .footer__links, .footer__company, .footer__get__in__touch {
@@ -781,59 +783,42 @@
     margin: 1rem 0; 
   }
 
-  .container__cta{
+  .container__cta {
     display: flex;
-    width: 100%;
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 79%;
     margin: 6rem 4rem;
     padding: 40px;
     background: url(../assets/img/Rectangle26.svg) no-repeat 0 0 / cover;
-  }
-  
-  .container__info_cta{
-    justify-content: space-between;
-    align-items: center; /* Центрируйте элементы по вертикали */
-    flex-direction: row; /* Расположение элементов в строку */
+    border-radius: 20px;
   }
 
-  .container__cta .container__button__cta .cta__button{
-    background-color: #000000;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 40px;
-    width: 190px;
-    height: 60px;
-    font-size: 18px;
+  .container__cta__main .text__cta__1, .container__cta__main .text__cta__2 {
+      margin: 0;
+      color: #000000;
+      text-align: left; 
   }
 
-  .container__cta .container__cta__main .text__cta__1 {
-    color: #000000;
-  }
-
-  .container__cta .container__cta__main .text__cta__2 {
-    color: #000000;
-    text-decoration: none;
-    width: 600px; 
-    line-height: 35px;
-  }
-  
-  .container__info_cta {
-    display: flex; /* Используйте flexbox для расположения элементов */
-    justify-content: space-between; /* Распределите пространство между элементами */
-
-  }
-  
-  .container__cta__main {
-    flex-grow: 1; /* Позволяет тексту занимать все доступное пространство */
-  }
-  
   .container__button__cta {
-    margin-left: 80%; /* Отступ между текстом и кнопкой */
+      margin-left: 20px; 
   }
-  
+
   .cta__button {
-    padding: 10px 20px; /* Установите желаемые отступы для кнопки */
-    font-size: 1rem; /* Размер шрифта кнопки */
-    cursor: pointer; /* Указатель курсора */
+      background-color: #000000;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 40px;
+      width: 190px;
+      height: 60px;
+      font-size: 18px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .cta__button:hover {
+      background-color: #ae67fa;
   }
 
 /* Медиазапрос для экранов от 1200px */
@@ -858,17 +843,13 @@
   }
 
   .future__info {
-    flex-direction: column; /* Меняем направление на колонку */
+    flex-direction: column; 
     align-items: center;
   }
 
   .future__info img {
-    width: 100%; /* Картинка будет уменьшаться */
+    width: 100%; 
     height: auto;
-  }
-
-  .container__content__right {
-    margin-top: 5%; /* Можешь скорректировать отступы */
   }
 
   .container__content__right {
@@ -882,11 +863,12 @@
 
   .blog .top__header{
     font-size: 2rem;
+    justify-content: center;
   }
 
   .blog{
     padding-right: 10%;
-  }
+  } 
 
   .blog-container {
     flex-direction: column; 
@@ -903,13 +885,13 @@
       width: 100%; 
       max-width: 400px;
   }
+  
+  .footer{
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-  .header {
-      padding: 1.5rem 0;
-  }
-
   .header__menu{
     display: none; 
     flex-direction: column; 
@@ -966,18 +948,23 @@
       text-align: center;
   }
 
+  .left__header{
+    font-size: 2rem;
+  }
+
   .future__info {
-    flex-direction: column; /* Меняем направление на колонку */
+    flex-direction: column; 
     align-items: center;
   }
 
   .future__info img {
-    width: 100%; /* Картинка будет уменьшаться */
+    width: 100%; 
     height: auto;
   }
 
   .container__content__right {
-    margin-top: 5%; /* Можешь скорректировать отступы */
+    margin-top: 5%; 
+    justify-content: center;
   }
 
   .future_here__left h2{
@@ -994,6 +981,11 @@
 
   .blog {
     padding-left: 10%;
+  }
+
+  .blog .top__header{
+    font-size: 2rem;
+    justify-content: center;
   }
 
   .blog-container {
@@ -1021,6 +1013,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    border-radius: 20px;
   }
 
   .container__cta__main{
@@ -1029,18 +1022,43 @@
     justify-content: center;
   }
 
-  .container__info_cta .container__cta__main a{
-    font-size: 1rem;
-  }
-
-  .container__info_cta .container__cta__main h3{
-    font-size: 1rem;
+  .text__cta__1{
+    font-size: 0.6rem;
   }
 
   .text__cta__2{
     align-items: center;
+    font-size: 0.9rem;
     width: 40%;
   }
+  .footer{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  .footer__content {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .footer__logo, .footer__links, .footer__company, .footer__get__in__touch {
+    margin: 20px 0; 
+    align-items: center; 
+    text-align: center;
+  }
+
+  .rights {
+    font-size: 0.75rem; 
+  }
+
+  .footer__title {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem; 
+    width: 60%;
+}
 }
 
 @media (max-width: 480px) {
@@ -1082,7 +1100,6 @@
 
   .container__content__right {
       width: 100%;
-      text-align: center;
   }
 
   .footer {
