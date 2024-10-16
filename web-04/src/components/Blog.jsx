@@ -51,31 +51,32 @@ export const ContainerRight = ({ item }) => {
     );
 };
 
-export const blog = () => {
+export const Blog = () => {
     const { header, mainArticle, info } = blogData;
 
     return (
         <>
-            <h1 className="top__header"
-                dangerouslySetInnerHTML={{ __html: header }}>
+            <h1 className="top__header">
+                {header}
             </h1>
-            <div className="blog-container">
-                <div className="blog-row">
-                    {/* Главная статья */}
-                    <div className="blog-item news_1">
-                        <img src={mainArticle.src} alt={mainArticle.alt} />
-                        <div className="container__text text_news_1">
-                            <p className="date">{info.date}</p>
-                            <h3 className="name_news_1">{info.title}</h3>
-                            <a href={info.link} className="continue_news">{info.moreInfo}</a>
+            <div className="news">
+                <div className="blog-container">
+                    <div className="blog-row">
+                        {/* Главная статья */}
+                        <div className="blog-item news_1">
+                            <img src={mainArticle.src} alt={mainArticle.alt} />
+                            <div className="container__text text_news_1">
+                                <p className="date">{info.date}</p>
+                                <h3 className="name_news_1">{info.title}</h3>
+                                <a href={info.link} className="continue_news">{info.moreInfo}</a>
+                            </div>
                         </div>
                     </div>
+                    <ContainerRight item={blogData} />
                 </div>
-
-                <ContainerRight item={blogData} />
             </div>
         </>
     );
 };
 
-export default blog;
+export default Blog;

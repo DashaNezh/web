@@ -5,7 +5,7 @@ import imageForTheThirdMiniArticle from "../assets/img/Rectangle 2222.svg";
 import imageForTheFourthMiniArticle from "../assets/img/Rectangle 221.svg";
 
 const blogData = {
-    header: "Многое Происходит,<br />Мы Ведем об Этом Блог.",
+    header: "Многое Происходит, Мы Ведем об Этом Блог.",
     info:{
         date: "Сент 26, 2021",
         title: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",

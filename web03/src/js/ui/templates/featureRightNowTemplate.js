@@ -6,7 +6,6 @@ export const featureRightNowTemplate = (data) => {
     `;
 
     const template = `
-        <section class="feature__right__now">
             <div class="future__info">
                 <div class="container__feature__image">
                     <img class="img__girl__feature" src="${image.src}" alt="${image.alt}" />
@@ -18,7 +17,6 @@ export const featureRightNowTemplate = (data) => {
                     ${buttonLink} <!-- Вставляем ссылку снова -->
                 </div>
             </div>
-        </section>
     `;
 
     return template;

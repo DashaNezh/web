@@ -12,7 +12,7 @@ export const ContainerRight = ( { item }) => {
     );
 };
 
-export const cta = () => {
+export const Cta = () => {
     const { callToAction } = ctaData;
 
     return (
@@ -21,8 +21,8 @@ export const cta = () => {
                 <a href={callToAction.href} className="text__cta__1">
                     {callToAction.text}
                 </a>
-                <h3 className="text__cta__2" 
-                    dangerouslySetInnerHTML={ { __html: callToAction.mainText} }>
+                <h3 className="text__cta__2">
+                    {callToAction.mainText}
                 </h3>
             </div>
             <div className="container__button__cta">
@@ -32,4 +32,4 @@ export const cta = () => {
     );
 };
 
-export default cta;
+export default Cta;

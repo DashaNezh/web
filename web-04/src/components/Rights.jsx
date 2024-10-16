@@ -1,6 +1,6 @@
 import rightsData from "../mockData/rightsData";
 
-export const rights = () => {
+export const Rights = () => {
     const {mainText} = rightsData
 
     return (
@@ -10,4 +10,4 @@ export const rights = () => {
     );
 };
 
-export default rights;
+export default Rights;
