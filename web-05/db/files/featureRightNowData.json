@@ -1,0 +1,13 @@
+{
+    "image": {
+       "src": "path/to/image/person_in_vr.svg",
+       "alt": "Person in VR"
+    },
+    "header": "Превосходя все ожидания",
+    "mainText": "Однако кровать для помощи в путешествии неприятна...",
+    "button": {
+       "href": "#",
+       "title": "Запроси ранний доступ"
+    }
+ }
+ 

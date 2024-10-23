@@ -1,0 +1,30 @@
+{
+    "header": "Многое Происходит, Мы Ведем об Этом Блог.",
+    "info": {
+      "date": "Сент 26, 2021",
+      "title": "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
+      "link": "#",
+      "moreInfo": "Читать полную статью"
+    },
+    "mainArticle": {
+      "src": "путь_к_изображению/main_article_image.svg",
+      "alt": "image_for_main_article"
+    },
+    "articleMiniOne": {
+      "src": "путь_к_изображению/first_mini_article_image.svg",
+      "alt": "image_for_the_first_mini_article"
+    },
+    "articleMiniTwo": {
+      "src": "путь_к_изображению/second_mini_article_image.svg",
+      "alt": "image_for_the_second_mini_article"
+    },
+    "articleMiniThree": {
+      "src": "путь_к_изображению/third_mini_article_image.svg",
+      "alt": "image_for_the_third_mini_article"
+    },
+    "articlesMiniFour": {
+      "src": "путь_к_изображению/fourth_mini_article_image.svg",
+      "alt": "image_for_the_fourth_mini_article"
+    }
+  }
+  
