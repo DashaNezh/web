@@ -16,7 +16,7 @@ const isBlogDataValid = (data) => {
   isObjectHasProps(articleMiniOne, ["src", "alt"]);
   isObjectHasProps(articleMiniTwo, ["src", "alt"]);
   isObjectHasProps(articleMiniThree, ["src", "alt"]);
-  isObjectHasProps(articlesMiniFour, ["src", "atl"]); // исправляем опечатку в "atl"
+  isObjectHasProps(articlesMiniFour, ["src", "alt"]); 
 };
 
 module.exports = isBlogDataValid;
