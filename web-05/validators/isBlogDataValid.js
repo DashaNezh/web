@@ -1,22 +1,25 @@
 const { isObjectHasProps } = require("./utils/validators");
 
 const isBlogDataValid = (data) => {
-  // проверяем объект на наличие полей и соответствие типу "объект"
-  isObjectHasProps(data, ["header", "info", "mainArticle", "articleMiniOne", "articleMiniTwo", "articleMiniThree", "articlesMiniFour"]);
+  // Проверяем наличие основных полей в объекте data
+  isObjectHasProps(data, ["header", "mainArticle", "articlesMini"]);
 
-  const { info, mainArticle, articleMiniOne, articleMiniTwo, articleMiniThree, articlesMiniFour } = data;
+  const { mainArticle, articlesMini } = data;
 
-  // проверяем внутренний объект info на наличие полей и соответствие типу "объект"
-  isObjectHasProps(info, ["date", "title", "link", "moreInfo"]);
+  // Проверяем объект mainArticle на наличие полей и соответствие типу "объект"
+  isObjectHasProps(mainArticle, ["date", "title", "link", "moreInfo"]);
+  isObjectHasProps(mainArticle.image, ["src", "alt"]);
 
-  // проверяем внутренний объект mainArticle на наличие полей и соответствие типу "объект"
-  isObjectHasProps(mainArticle, ["src", "alt"]);
+  // Проверяем, что articlesMini является массивом и каждую статью в нем
+  if (!Array.isArray(articlesMini) || articlesMini.length !== 4) {
+    throw new Error("articlesMini должен быть массивом с четырьмя элементами.");
+  }
 
-  // проверяем мини-статьи на наличие полей и соответствие типу "объект"
-  isObjectHasProps(articleMiniOne, ["src", "alt"]);
-  isObjectHasProps(articleMiniTwo, ["src", "alt"]);
-  isObjectHasProps(articleMiniThree, ["src", "alt"]);
-  isObjectHasProps(articlesMiniFour, ["src", "alt"]); 
+  // Проверяем каждую мини-статью на наличие полей и соответствие типу "объект"
+  articlesMini.forEach((miniArticle, index) => {
+    isObjectHasProps(miniArticle, ["date", "title", "link", "moreInfo"]);
+    isObjectHasProps(miniArticle.image, ["src", "alt"]);
+  });
 };
 
 module.exports = isBlogDataValid;
